@@ -4,7 +4,7 @@ Atividade do curso.
 
 ## ícones 
 
-:package: nova funcionalidade
-:up: atualização
-:beatle: correção de bug
-:checkered_flag: release
+-   :package: nova funcionalidade
+-   :up: atualização
+-   :spider: correção de bug
+-   :checkered_flag: release
