@@ -312,14 +312,18 @@ margin-bottom: 1.5rem;
 .computadores{
     display:flex;
     justify-content: space-evenly;
+    margin-bottom: 2rem;
+    
 }
 
 .card{
-    width: 17rem;
-    height: 25rem;
+    width: 18rem;
+    height: 30rem;
+    position: relative;
 }
 
 .card-img-wrapper{
+    object-fit: cover;
     width:100%;
     height:100%;
     background-color: #959595;
@@ -332,12 +336,245 @@ margin-bottom: 1.5rem;
     height: 100%;
     border-radius: .4rem;
     opacity: .9;
+    transition: opacity  .3s;
+}
+
+.card:hover .card-img-wrapper img{
+    opacity: .8;
 }
 
 .card-info{
     position: absolute;
     bottom: 0;
+    padding: 2rem;
+    opacity: 0;
+    visibility: hidden;
+    text-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, .4);
 }
+
+.card-info h2{
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 500;
+    color: #eee;
+}
+
+.card-info h3{
+    font-family: var(--font-secundary);
+    font-weight: bolder;
+    color:#a044ff
+}
+
+.card-info p{
+    font-family: var(--font-secundary);
+    color: #eee;
+    font-weight: 300;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    background: #6a3093;  
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093); 
+    background: linear-gradient(to right, #a044ff, #6a3093); 
+    font-family: var(--font-action);
+    font-size: 1rem;
+    color: #eee;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+    transition: all .3s;
+}
+
+.card-info button{
+    width: 8rem;
+    height: 2.5rem;
+}
+
+.card:hover  .card-info{
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.sessao-contato{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(75, 75, 75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-wrapper{
+    width: 60%;
+    height: 50%;
+    display: flex;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, .5);
+}
+
+.contato-left{
+    width: 35%;
+    background: linear-gradient(rgba(22,22,22,0.6), rgba(30,30,30,0.9)), url(imagens/alberto-juarez-cPm8HPRL04w-unsplash.jpg);
+    background-size: cover;
+    
+}
+
+.contato-right{
+    width: 65%;
+    background-color: #eee;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+
+.sessao-contato h1{
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-primary);
+    color: rgb(75, 75, 75);
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.sessao-contato form{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+
+.input-group{
+    position: relative;
+}
+
+.field{
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--font-secundary);
+    border-bottom: 2px dashed #959595;
+    height: 3rem;
+    outline: none;
+    margin: 1rem 0;
+
+}
+
+.input-group textarea{
+    padding-top: 1rem;
+    max-width: 20rem;
+    max-height: 5rem;
+}
+
+.field-label{
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    font-size: 1.2rem;
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+
+.field:focus ~ label{
+    top: 0;
+    font-size: 1rem;
+}
+
+.field:focus {
+    border-bottom: solid;
+}
+.btn_submit{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    width: 50%;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+.sessao-orcamento{
+    width: 100%;
+    height: 100vh;
+    background: url("./imagens/ali-yilmaz-b35lwtXiGgs-unsplash.jpg");
+    object-fit: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orcamento-wrapper{
+   width: 60%;
+   height: 60%;
+   background-color: #ffffff99;
+   border-radius: 10px;
+   box-shadow: 0 0.1rem 0.3 rgba(0, 0, 0, .5);
+   position: relative;
+
+}
+
+.sessao-orcamento h1{
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+    background: #6a3093;  
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093); 
+    background: linear-gradient(to right, #a044ff, #6a3093); 
+    padding:0 3rem;
+    color: #ffff;
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: lighter;
+    box-shadow: 0 0.1rem 0.3 rgba(0, 0, 0, .5);
+    border-radius: 10px;
+
+
+}
+
+
+.sessao-orcamento form{
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+
+
+.sessao-orcamento label{
+   font-family: var(--font-secundary);
+   font-size: 1.3rem;
+   font-weight: bold;
+
+}
+
+.sessao-orcamento input[type="number"]{
+    font-family: var(--font-secundary);
+    width: 4rem;
+    font-size: 2rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 0.3rem;
+}
+
+.btn-orcamento{
+    text-transform: uppercase;
+    padding: 1rem;
+    cursor: pointer;
+    grid-column: 2;
+    
+
+}
+
+
+
+
+
+
+
 
 
 

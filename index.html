@@ -126,19 +126,19 @@
                     <img src="imagens/artiom-vallat-awHbsDUY5FI-unsplash.jpg" alt="Computador Gamer">
                 </div>
                 <div class="card-info">
-                    <h2>Computador Gamer Razer</h2>
-                    <h3>AMD ryzen 5 3500x, Rx570 4gb de ram, 8gb de ram, HD 1 terabyte, fonte corsair 500w</h3>
+                    <h2>Computador Razer</h2>
+                    <h3>Ryzen 5 3500x, Rx570 4gb vram, 8gb de ram, HD 1 tera, fonte 500w</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, alias id magni quisquam reprehenderit officia dignissimos recusandae sequi placeat laborum, fuga, suscipit porro deserunt a exercitationem ipsa repudiandae laboriosam minima.</p>
-                    <button>Saiba mais</button>
+                    <button class="btn">Saiba mais</button>
                 </div>
                 </div>
                 <div class="card">
                 <div class="card-img-wrapper"><img src="imagens/aviv-rachmadian-5fZqHF21CIw-unsplash.jpg" alt="Computador Gamer"></div>
                 <div class="card-info">
-                    <h2>Computador Gamer Redragon</h2>
-                    <h3>I5 9900, Rx580 de 8gb de ram, 16gb de ram, hd 1 tera, fonte aerocool 500w</h3>
+                    <h2>Computador Redragon</h2>
+                    <h3>I5 9900k, Rx580 8gb vram, 16gb de ram, hd 1 tera, fonte 500w</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, aut expedita! Reiciendis sit expedita odio hic dolore quisquam, debitis, sunt voluptatem ad qui accusantium repellat aut maxime? Possimus, nostrum consequatur.</p>
-                    <button>Saiba mais</button>
+                    <button class="btn">Saiba mais</button>
                 </div>
                 </div>
                 <div class="card">
@@ -146,15 +146,65 @@
             
                 <div class="card-info">
                     <h2>Computador Gamer Vitae</h2>
-                    <h3>I9 10900x, RTX2080ti 8gb de ram, 32gb de memória ram,  ssd 1 terabyte, fonte corsair 850w</h3>
+                    <h3>I9 10900x, RTX2080ti 8gb vram, 32gb de ram,  ssd 1 tera, fonte 850w</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit fuga deleniti quaerat quas debitis eum porro incidunt quasi totam eos ut ducimus alias, culpa sequi asperiores blanditiis fugit laudantium! Cum.</p>
-                    <button>Saiba mais</button>
+                    <button class="btn">Saiba mais</button>
                 </div>
                 </div>
     
       </div>
      </section>
+     <section class="sessao-contato" id="contato">
+        <div class="contato-wrapper">
+          <div class="contato-left"></div>
+          <div class="contato-right">
+            <h1>Contato</h1>
+            <form>
+              <div class="input-group">
+                <input type="text" class="field" id="nome">
+                <label for="nome" class="field-label">Nome</label>
+              </div>
+              <div class="input-group">
+                <input type="text" class="field" id="email">
+                <label for="email" class="field-label">E-mail</label>
+              </div>
+              <div class="input-group">
+                <textarea class="field" id="mensagem"></textarea>
+                <label for="mensagem" class="field-label">Mensagem</label>
+              </div>
+              <button type="submit" class="btn btn_submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
 
+      <section class="sessao-orcamento">
+          <div class="orcamento-wrapper">
+              <h1>Faça um orçameto</h1>
+              <form>
+                  <label for="qtde">Qtde de pcs</label>
+                  <input type="number"min="1" name="qtde" id="qtde">
+                  <label for="js">Preciso de periféricos</label>
+                  <input type="checkbox" name="pf" id="pf">
+                  <label> Windows 10 pro key</label>
+                  <div class="group-layout">
+                      <div>
+                      <input type="radio" name="win10" id="win10-sim">
+                      <label for="win10-sim">Preciso de uma chave Windows</label>
+                      </div>
+                      <div>
+                        <input type="radio" name="win10" id="win10-não">
+                        <label for="win10-não">Somente a versão de teste de 30 dias</label>
+                    </div>
+                  </div>
+                  <label for="prazo">prazo</label>
+                  <input type="range" name="prazo" id="prazo">
+                  <button class="btn btn-orcamento" type="submit">Enviar</button>
+                  
+              </form>
+
+          </div>
+      </section>
 </body>
 
 <script src="script.js"></script>
